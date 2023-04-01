@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8babd87b09.js"></script>
+</head>
+<body>
+    <div class="containers">
+        <div class="row">
+            <div class="col-9">
+                <div class="logo">
+                    <i class="fab fa-quinscape" style="color: orange;"></i><span style="color: rgb(13, 183, 235);">iuz</span>
+                </div>
+            </div>
+            <div class="col-3" id="time"></div>
+        </div>
+        <div class="row" id="content">
+            <div class="col-md-8 col-sm-12" id="questions">
+                <div id="question">
+                </div>
+                <div id="options">
+
+                </div>
+                <!--<ul id="options">
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                </ul>-->
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="instructions">
+                    <div id="username">Hello </div>
+                    <div class="dropdown">
+                        <button type="button" id="drop" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Instructions</button>
+                        <div class="dropdown-menu bg-dark text-white">
+                            <ul>
+                                <li>Quiz contains 10 questions.</li>
+                                <li>Each queston carries <b>Two(2)</b> mark.</li>
+                                <li>For each wrong answer <b>One(1)</b> mark will be deducted.</li>
+                                <li>No mark will be deducted for the not attempted questions.</li>
+                                <li>For dis selecting an option come back to the question then click on "Save & Next" Button without selectng any option.</li>
+                                <li>You need to click on <b>"Save & Next Question"</b> button for saving your answer.</li>
+                                <li>Buttons of the respected questions will be marked only when you click on "Save and Next Button".</li>  
+                            </ul> 
+                            
+                        </div>
+                      </div>
+                </div>
+                <div class="btns">
+                    <div class="col-md-12 col-sm-12" class="row1">
+                        <button id="btn1" onclick="btn1q()">1</button>
+                        <button id="btn2" onclick="btn2q()">2</button>
+                        <button id="btn3" onclick="btn3q()">3</button>
+                        <button id="btn4" onclick="btn4q()">4</button>
+                        <button id="btn5" onclick="btn5q()">5</button>
+                        <button id="btn6" onclick="btn6q()">6</button>
+                        <button id="btn7" onclick="btn7q()">7</button>
+                        <button id="btn8" onclick="btn8q()">8</button>
+                        <button id="btn9" onclick="btn9q()">9</button>
+                        <button id="btn10" onclick="btn10q()">10</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div id="prevbtn">
+                 <button class="btn btn-primary btn-md">Previous Question</button>
+            </div>
+            <div id="nextbtn">
+                <button class="btn btn-primary btn-md">Save & Next Question</button>
+            </div>
+            <div id="endbtn">
+                <button class="btn btn-outline-danger btn-md" onclick="endquiz()">Save & End Quiz</button>
+            </div>
+        </div>  
+        
+    </div>
+    <h6 id="footer">&copy sharath 2021  |  Design by sharath</h6>
+    <script src="quiz.js"></script>
+</body>
+</html>
